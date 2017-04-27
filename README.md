@@ -35,7 +35,7 @@ $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab3
 $ git push origin master
 ```
 
-Добавить на сервисе *Github* в репозитории **lab3** файл **.gitignore**
+Добавить на сервисе **Github** в репозитории **lab3** файл **.gitignore**
 со следующем содержимом:
 
 ```
