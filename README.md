@@ -27,11 +27,12 @@ $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
 $ git config --global user.email ${GITHUB_EMAIL}
 $ git config -e --global
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab3
+$ git pull origin master
 $ touch README.md
 $ git status
 $ git add README.md
 $ git commit -m"added README.md"
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab3
 $ git push origin master
 ```
 
@@ -104,7 +105,9 @@ $ nano README.md
 ```
 
 ```bash
+$ git status
 $ git add -p
+$ git add .
 $ git commit -m"added sources"
 $ git push origin master
 ```
