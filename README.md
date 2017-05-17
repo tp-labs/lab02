@@ -8,7 +8,7 @@ $ open https://git-scm.com
 
 ## Tasks
 
-- [ ] 1. Создать публичный репозиторий с названием **lab3** и с лиценцией **MIT**
+- [ ] 1. Создать публичный репозиторий с названием **lab03** и с лиценцией **MIT**
 - [ ] 2. Ознакомиться со ссылками учебного материала
 - [ ] 3. Выполнить инструкцию учебного материала
 - [ ] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
@@ -22,12 +22,12 @@ $ alias edit=<nano|vi|vim|subl>
 ```
 
 ```bash
-$ mkdir lab3 && cd lab3
+$ mkdir lab03 && cd lab03
 $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
 $ git config --global user.email ${GITHUB_EMAIL}
 $ git config -e --global
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab3
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab03
 $ git pull origin master
 $ touch README.md
 $ git status
@@ -36,7 +36,7 @@ $ git commit -m"added README.md"
 $ git push origin master
 ```
 
-Добавить на сервисе **GitHub** в репозитории **lab3** файл **.gitignore**
+Добавить на сервисе **GitHub** в репозитории **lab03** файл **.gitignore**
 со следующем содержимом:
 
 ```
@@ -109,6 +109,19 @@ $ git status
 $ git add .
 $ git commit -m"added sources"
 $ git push origin master
+```
+
+## Report
+
+```bash
+$ cd ~/workspace/labs/
+$ export LAB_NUMBER=03
+$ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
+$ mkdir reports/lab${LAB_NUMBER}
+$ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
+$ cd reports/lab${LAB_NUMBER}
+$ edit REPORT.md
+$ gistup -m"lab${LAB_NUMBER}"
 ```
 
 ## Links
