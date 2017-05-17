@@ -36,7 +36,7 @@ $ git commit -m"added README.md"
 $ git push origin master
 ```
 
-Добавить на сервисе **Github** в репозитории **lab3** файл **.gitignore**
+Добавить на сервисе **GitHub** в репозитории **lab3** файл **.gitignore**
 со следующем содержимом:
 
 ```
