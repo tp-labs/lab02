@@ -1,18 +1,16 @@
 ## Laboratory work III
 
-Данная лабораторная работа посвещена изучению систем совместной разработки на примере сервиса **GitHub**.
+Данная лабораторная работа посвещена изучению систем контроля версий на примере **Git**.
 
 ```bash
-$ open https://github.com
+$ open https://git-scm.com
 ```
 
 ## Tasks
 
-- [ ] 1. Зарегистрироваться на сервисе совместной разработки **GitHub**
-- [ ] 2. Создать публичный репозиторий с названием **lab3** и с лиценцией **MIT**
-- [ ] 3. Отправить личным сообщением ссылку на созданный репозиторий в **Slack**
-- [ ] 4. Выполнить инструкцию учебного материала
-- [ ] 5. Ознакомиться со ссылками учебного материала
+- [ ] 1. Создать публичный репозиторий с названием **lab3** и с лиценцией **MIT**
+- [ ] 2. Выполнить инструкцию учебного материала
+- [ ] 3. Ознакомиться со ссылками учебного материала
 
 ## Tutorial
 
@@ -36,7 +34,7 @@ $ git commit -m"added README.md"
 $ git push origin master
 ```
 
-Добавить на сервисе **GitHub** в репозитории **lab3** файл **.gitignore**
+Добавить на сервисе **Github** в репозитории **lab3** файл **.gitignore**
 со следующем содержимом:
 
 ```
@@ -114,7 +112,7 @@ $ git push origin master
 
 ## Links
 
-- [Git](https://git-scm.com)
+- [GitHub](https://github.com)
 - [Bitbucket](https://bitbucket.org)
 - [Gitlab](https://about.gitlab.com)
-- [GitHub](https://services.github.com/resources/)
+- [LearnGitBranching](http://learngitbranching.js.org/)
