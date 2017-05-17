@@ -104,7 +104,6 @@ $ nano README.md
 
 ```bash
 $ git status
-$ git add -p
 $ git add .
 $ git commit -m"added sources"
 $ git push origin master
