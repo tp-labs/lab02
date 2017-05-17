@@ -9,14 +9,16 @@ $ open https://git-scm.com
 ## Tasks
 
 - [ ] 1. Создать публичный репозиторий с названием **lab3** и с лиценцией **MIT**
-- [ ] 2. Выполнить инструкцию учебного материала
-- [ ] 3. Ознакомиться со ссылками учебного материала
+- [ ] 2. Ознакомиться со ссылками учебного материала
+- [ ] 3. Выполнить инструкцию учебного материала
+- [ ] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
 ```bash
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_EMAIL=<адрес_почтового_ящика>
+$ alias edit=<nano|vi|vim|subl>
 ```
 
 ```bash
@@ -99,7 +101,7 @@ EOF
 ```
 
 ```bash
-$ nano README.md
+$ edit README.md
 ```
 
 ```bash
@@ -115,3 +117,7 @@ $ git push origin master
 - [Bitbucket](https://bitbucket.org)
 - [Gitlab](https://about.gitlab.com)
 - [LearnGitBranching](http://learngitbranching.js.org/)
+
+```
+Copyright (c) 2017 Vyacheslav Vershinin
+```
