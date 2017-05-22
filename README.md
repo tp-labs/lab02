@@ -132,5 +132,5 @@ $ gistup -m"lab${LAB_NUMBER}"
 - [LearnGitBranching](http://learngitbranching.js.org/)
 
 ```
-Copyright (c) 2017 Vyacheslav Vershinin
+Copyright (c) 2017 Братья Вершинины
 ```
