@@ -15,13 +15,13 @@ $ open https://git-scm.com
 
 ## Tutorial
 
-```bash
+```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_EMAIL=<адрес_почтового_ящика>
 $ alias edit=<nano|vi|vim|subl>
 ```
 
-```bash
+```ShellSession
 $ mkdir lab03 && cd lab03
 $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
@@ -39,18 +39,18 @@ $ git push origin master
 Добавить на сервисе **GitHub** в репозитории **lab03** файл **.gitignore**
 со следующем содержимом:
 
-```
+```ShellSession
 *build*/
 *install*/
 *.swp
 ```
 
-```bash
+```ShellSession
 $ git pull origin master
 $ git log
 ```
 
-```bash
+```ShellSession
 $ mkdir sources
 $ mkdir include
 $ mkdir examples
@@ -67,7 +67,7 @@ void print(const std::string& text, std::ofstream& out) {
 EOF
 ```
 
-```bash
+```ShellSession
 $ cat > include/print.hpp <<EOF
 #include <string>
 #include <fstream>
@@ -78,7 +78,7 @@ void print(const std::string& text, std::ofstream& out);
 EOF
 ```
 
-```bash
+```ShellSession
 $ cat > examples/example1.cpp <<EOF
 #include <print.hpp>
 
@@ -88,7 +88,7 @@ int main(int argc, char** argv) {
 EOF
 ```
 
-```bash
+```ShellSession
 $ cat > examples/example2.cpp <<EOF
 #include <fstream>
 #include <print.hpp>
@@ -100,11 +100,11 @@ int main(int argc, char** argv) {
 EOF
 ```
 
-```bash
+```ShellSession
 $ edit README.md
 ```
 
-```bash
+```ShellSession
 $ git status
 $ git add .
 $ git commit -m"added sources"
@@ -113,7 +113,7 @@ $ git push origin master
 
 ## Report
 
-```bash
+```ShellSession
 $ cd ~/workspace/labs/
 $ export LAB_NUMBER=03
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
