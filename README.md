@@ -27,7 +27,7 @@ $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
 $ git config --global user.email ${GITHUB_EMAIL}
 $ git config -e --global
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab03
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab03.git
 $ git pull origin master
 $ touch README.md
 $ git status
