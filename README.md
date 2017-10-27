@@ -22,7 +22,12 @@ $ alias edit=<nano|vi|vim|subl>
 ```
 
 ```ShellSession
-$ mkdir lab03 && cd lab03
+$ cd ${GITHUB_USERNAME}/workspace
+$ source scripts/activate
+```
+
+```ShellSession
+$ mkdir projects/lab03 && cd projects/lab03
 $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
 $ git config --global user.email ${GITHUB_EMAIL}
@@ -43,6 +48,7 @@ $ git push origin master
 *build*/
 *install*/
 *.swp
+.idea/
 ```
 
 ```ShellSession
