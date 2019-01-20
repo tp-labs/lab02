@@ -9,21 +9,35 @@ $ open https://git-scm.com
 ## Tasks
 
 - [ ] 1. Создать публичный репозиторий с названием **lab02** и с лиценцией **MIT**
-- [ ] 2. Ознакомиться со ссылками учебного материала
-- [ ] 3. Выполнить инструкцию учебного материала
-- [ ] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
+- [ ] 2. Сгенирировать токен для доступа к сервису **GitHub** с правами **repo**
+- [ ] 3. Ознакомиться со ссылками учебного материала
+- [ ] 4. Выполнить инструкцию учебного материала
+- [ ] 5. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
 ```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_EMAIL=<адрес_почтового_ящика>
+$ export GITHUB_TOKEN=<сгенирированный_токен>
 $ alias edit=<nano|vi|vim|subl>
 ```
 
 ```ShellSession
 $ cd ${GITHUB_USERNAME}/workspace
 $ source scripts/activate
+$ go get github.com/github/hub
+```
+
+```ShellSession
+$ mkdir ~/.config
+$ cat > ~/.config/hub <<EOF
+github.com:
+- user: ${GITHUB_USERNAME}
+  oauth_token: ${GITHUB_TOKEN}
+  protocol: https
+EOF
+$ git config --global hub.protocol https
 ```
 
 ```ShellSession
