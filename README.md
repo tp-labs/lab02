@@ -26,7 +26,6 @@ $ alias edit=<nano|vi|vim|subl>
 ```ShellSession
 $ cd ${GITHUB_USERNAME}/workspace
 $ source scripts/activate
-$ go get github.com/github/hub
 ```
 
 ```ShellSession
