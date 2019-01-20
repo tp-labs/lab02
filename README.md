@@ -40,7 +40,7 @@ $ git config --global hub.protocol https
 ```
 
 ```ShellSession
-$ mkdir projects/lab03 && cd projects/lab02
+$ mkdir projects/lab02 && cd projects/lab02
 $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
 $ git config --global user.email ${GITHUB_EMAIL}
