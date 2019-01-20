@@ -1,4 +1,4 @@
-## Laboratory work III
+## Laboratory work II
 
 Данная лабораторная работа посвещена изучению систем контроля версий на примере **Git**.
 
@@ -8,7 +8,7 @@ $ open https://git-scm.com
 
 ## Tasks
 
-- [ ] 1. Создать публичный репозиторий с названием **lab03** и с лиценцией **MIT**
+- [ ] 1. Создать публичный репозиторий с названием **lab02** и с лиценцией **MIT**
 - [ ] 2. Ознакомиться со ссылками учебного материала
 - [ ] 3. Выполнить инструкцию учебного материала
 - [ ] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
@@ -27,12 +27,13 @@ $ source scripts/activate
 ```
 
 ```ShellSession
-$ mkdir projects/lab03 && cd projects/lab03
+$ mkdir projects/lab03 && cd projects/lab02
 $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
 $ git config --global user.email ${GITHUB_EMAIL}
+# check your git global settings
 $ git config -e --global
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab03.git
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab02.git
 $ git pull origin master
 $ touch README.md
 $ git status
@@ -41,7 +42,7 @@ $ git commit -m"added README.md"
 $ git push origin master
 ```
 
-Добавить на сервисе **GitHub** в репозитории **lab03** файл **.gitignore**
+Добавить на сервисе **GitHub** в репозитории **lab02** файл **.gitignore**
 со следующем содержимом:
 
 ```ShellSession
@@ -63,11 +64,13 @@ $ mkdir examples
 $ cat > sources/print.cpp <<EOF
 #include <print.hpp>
 
-void print(const std::string& text, std::ostream& out) {
+void print(const std::string& text, std::ostream& out)
+{
   out << text;
 }
 
-void print(const std::string& text, std::ofstream& out) {
+void print(const std::string& text, std::ofstream& out)
+{
   out << text;
 }
 EOF
@@ -75,12 +78,12 @@ EOF
 
 ```ShellSession
 $ cat > include/print.hpp <<EOF
-#include <string>
 #include <fstream>
 #include <iostream>
+#include <string>
 
-void print(const std::string& text, std::ostream& out = std::cout);
 void print(const std::string& text, std::ofstream& out);
+void print(const std::string& text, std::ostream& out = std::cout);
 EOF
 ```
 
@@ -88,7 +91,8 @@ EOF
 $ cat > examples/example1.cpp <<EOF
 #include <print.hpp>
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
   print("hello");
 }
 EOF
@@ -96,10 +100,12 @@ EOF
 
 ```ShellSession
 $ cat > examples/example2.cpp <<EOF
-#include <fstream>
 #include <print.hpp>
 
-int main(int argc, char** argv) {
+#include <fstream>
+
+int main(int argc, char** argv)
+{
   std::ofstream file("log.txt");
   print(std::string("hello"), file);
 }
@@ -121,7 +127,7 @@ $ git push origin master
 
 ```ShellSession
 $ cd ~/workspace/labs/
-$ export LAB_NUMBER=03
+$ export LAB_NUMBER=02
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER}.git tasks/lab${LAB_NUMBER}
 $ mkdir reports/lab${LAB_NUMBER}
 $ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
@@ -138,5 +144,5 @@ $ gistup -m "lab${LAB_NUMBER}"
 - [LearnGitBranching](http://learngitbranching.js.org/)
 
 ```
-Copyright (c) 2017 Братья Вершинины
+Copyright (c) 2015-2019 The ISC Authors
 ```
