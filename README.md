@@ -139,7 +139,7 @@ $ git push origin master
 ## Report
 
 ```ShellSession
-$ cd ~/workspace/labs/
+$ cd ~/workspace/
 $ export LAB_NUMBER=02
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER}.git tasks/lab${LAB_NUMBER}
 $ mkdir reports/lab${LAB_NUMBER}
