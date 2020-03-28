@@ -16,19 +16,19 @@ $ open https://git-scm.com
 
 ## Tutorial
 
-```ShellSession
+```sh
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_EMAIL=<адрес_почтового_ящика>
 $ export GITHUB_TOKEN=<сгенирированный_токен>
 $ alias edit=<nano|vi|vim|subl>
 ```
 
-```ShellSession
+```sh
 $ cd ${GITHUB_USERNAME}/workspace
 $ source scripts/activate
 ```
 
-```ShellSession
+```sh
 $ mkdir ~/.config
 $ cat > ~/.config/hub <<EOF
 github.com:
@@ -39,7 +39,7 @@ EOF
 $ git config --global hub.protocol https
 ```
 
-```ShellSession
+```sh
 $ mkdir projects/lab02 && cd projects/lab02
 $ git init
 $ git config --global user.name ${GITHUB_USERNAME}
@@ -58,19 +58,19 @@ $ git push origin master
 Добавить на сервисе **GitHub** в репозитории **lab02** файл **.gitignore**
 со следующем содержимом:
 
-```ShellSession
+```sh
 *build*/
 *install*/
 *.swp
 .idea/
 ```
 
-```ShellSession
+```sh
 $ git pull origin master
 $ git log
 ```
 
-```ShellSession
+```sh
 $ mkdir sources
 $ mkdir include
 $ mkdir examples
@@ -89,7 +89,7 @@ void print(const std::string& text, std::ofstream& out)
 EOF
 ```
 
-```ShellSession
+```sh
 $ cat > include/print.hpp <<EOF
 #include <fstream>
 #include <iostream>
@@ -100,7 +100,7 @@ void print(const std::string& text, std::ostream& out = std::cout);
 EOF
 ```
 
-```ShellSession
+```sh
 $ cat > examples/example1.cpp <<EOF
 #include <print.hpp>
 
@@ -111,7 +111,7 @@ int main(int argc, char** argv)
 EOF
 ```
 
-```ShellSession
+```sh
 $ cat > examples/example2.cpp <<EOF
 #include <print.hpp>
 
@@ -125,11 +125,11 @@ int main(int argc, char** argv)
 EOF
 ```
 
-```ShellSession
+```sh
 $ edit README.md
 ```
 
-```ShellSession
+```sh
 $ git status
 $ git add .
 $ git commit -m"added sources"
@@ -138,7 +138,7 @@ $ git push origin master
 
 ## Report
 
-```ShellSession
+```sh
 $ cd ~/workspace/
 $ export LAB_NUMBER=02
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER}.git tasks/lab${LAB_NUMBER}
@@ -201,5 +201,5 @@ $ gist REPORT.md
 - [LearnGitBranching](http://learngitbranching.js.org/)
 
 ```
-Copyright (c) 2015-2019 The ISC Authors
+Copyright (c) 2015-2020 The ISC Authors
 ```
