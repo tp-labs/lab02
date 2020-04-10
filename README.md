@@ -1,5 +1,8 @@
 ## Laboratory work II
 
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/tp-labs/lab02/master/preview.png)](https://yandex.ru/efir/?stream_id=vMPJl0nEKr_0)
+
+
 Данная лабораторная работа посвещена изучению систем контроля версий на примере **Git**.
 
 ```bash
