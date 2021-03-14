@@ -1,7 +1,5 @@
 ## Laboratory work II
 
-<a href="https://yandex.ru/efir/?stream_id=vMPJl0nEKr_0"><img src="https://raw.githubusercontent.com/tp-labs/lab02/master/preview.png" width="640"/></a>
-
 Данная лабораторная работа посвещена изучению систем контроля версий на примере **Git**.
 
 ```bash
@@ -203,5 +201,5 @@ $ gist REPORT.md
 - [LearnGitBranching](http://learngitbranching.js.org/)
 
 ```
-Copyright (c) 2015-2020 The ISC Authors
+Copyright (c) 2015-2021 The ISC Authors
 ```
