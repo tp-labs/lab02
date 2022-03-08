@@ -1,9 +1,11 @@
 #include <iostream>
-using namespace std;
-
-// bad code style here
+#include <string>
 
 int main() {
- 	cout << "Hello world!" << endl;
+	std::string username;
+	
+	std::getline(std::cin, username);
+ 	std::cout << "Hello world from " << username << std::endl;
+
 	return 0;
 }
