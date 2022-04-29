@@ -1,8 +1,10 @@
 #include <iostream>
-
+#include <cstring>
 using namespace std;
 
 int main(){
-    cout << "hello world";
+    string name;
+    cin >> name;
+    cout << "\nHello world from " << name;
     return 0;
 }
