@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-
+// without namespace
 int main(){
     std::string name;
     std::cin >> name;
